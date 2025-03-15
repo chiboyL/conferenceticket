@@ -7,8 +7,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+    <div class="pattern-container">
+        <img src="assets/images/pattern-lines.svg" alt="patterns" class="pattern">
+        
+        <img src="assets/images/pattern-squiggly-line-bottom-mobile-tablet.svg" alt="" class="pattern">
+    </div>
+   
     <header>
+        <!-- <img src="assets/images/pattern-squiggly-line-top.svg" alt="" class="pattern"> -->
         <img src="assets/images/logo-full.svg" alt="">
         <h1>Coding Conf</h1>
     </header>
@@ -16,9 +22,16 @@
         <h1>Your Journey to Coding Conf 2025 Starts Here!</h1>
         <p>Secure you sport at next year's biggest coding conference.</p>
     </section>
-    <h1>Conference ticket form</h1>
-    <input type="text" id="promptInput" placeholder="Enter your prompt">
-    <button id="generateButton">Generate</button>
+    <section class="fileuploadcontainer">
+        <p>Upload Avatar</p>
+        <div class="uploadfile" id="dropContainer"></div>
+            <img src="assets/images/icon-upload.svg" alt="">
+            <p>Drag and drop or click to upload</p>
+            <input type="file" id="fileUpload" accept="image/*" style="display: none;">
+        </div>
+    </section>
+
+  
     
 
 
