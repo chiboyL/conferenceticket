@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'myfont';
+    src: url('assets/fonts/Inconsolata-VariableFont_wdth\,wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+body { 
+    font-family: 'myfont', sans-serif;
+
+}
+#imageContainer img {
+     max-width: 500px; max-height: 500px; 
+}
