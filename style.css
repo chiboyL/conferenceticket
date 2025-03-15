@@ -30,6 +30,7 @@ body {
     border: 3px dashed #ccc;
     border-radius: 10px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background: linear-gradient(45deg, #f3f3f3, #f3f3f3);
@@ -44,7 +45,7 @@ body {
     margin-bottom: 10px;
 }
 
-#dropContainer p {
+/* #dropContainer p {
     margin: 0;
     font-size: 14px;
     color: #666;
@@ -52,7 +53,7 @@ body {
 
 #dropContainer input[type="file"] {
     display: none;
-}
+} */
 .pattern-container{
     height: 100vh;
     position: absolute;
