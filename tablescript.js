@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
         row.innerHTML = `
             <td>${counter += 1}</td>
-            <td><img src="${obj[key]["image"]}" ></td>
             <td>${obj[key]["username"]}</td>
             <td>${obj[key]["email"]}</td>
             <td>${obj[key]["githubUsername"]}</td>
