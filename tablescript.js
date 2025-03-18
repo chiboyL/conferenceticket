@@ -1,6 +1,5 @@
 
 document.addEventListener('DOMContentLoaded', function() {
-    let form = document.getElementById('form');
     let formdata = localStorage.getItem('userData');
     let obj=JSON.parse(formdata);
     let counter = 0;

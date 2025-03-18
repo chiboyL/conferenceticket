@@ -6,13 +6,13 @@
     <title>Ticket</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
     <header>
         <img src="assets/images/logo-full.svg" alt="coding conf logo">
     </header>
     <article class="center">
-        <h1 class="text-gradient">Congrats, <span id="Usersname">Chinonos Ekezie</span>! Your ticket is ready.</h1>
-        <p id="usersEmail">We've emailed your ticket to <span id="textemail"></span> and we will send updates in the run up to the event.</p>
+        <h1 class="text-gradient">Congrats, <span class="Usersname">Chinonos Ekezie</span>! Your ticket is ready.</h1>
+        <p id="usersEmail">We've emailed your ticket to <span class="textemail"></span> and we will send updates in the run up to the event.</p>
     </article>
     <main class="ticket">
         <img src="assets/images/pattern-ticket.svg" alt="" width="100%" style="max-width: 30em;">
@@ -24,8 +24,8 @@
             <section id="userinfo">
                 <img src="assets/images/image-avatar.jpg" alt="Logo" width="50em">
                 <section id="userdetails">
-                    <h3 id="Usersname">Chinonso Ekezie</h3>
-                    <p id="textemail">chinonso@gmail.com</p>
+                    <h3 class="Usersname">Chinonso Ekezie</h3>
+                    <p class="textemail">chinonso@gmail.com</p>
                 </section>
                 
             </section>
@@ -34,6 +34,29 @@
 
 
 
-    <script src="script.js"></script>
+    <script>
+
+
+(function(){
+    let userName = document.getElementsByClassName("Usersname");
+    let userEmail = document.getElementsByClassName("textemail");
+
+    let formdata = localStorage.getItem('userData');
+    let obj=JSON.parse(formdata);
+    Object.keys(obj).forEach((key) => {
+        console.log(obj[key]);
+        for (let i = 0; i < userName.length; i++) {
+            userName[i].textContent = obj[key]["username"];
+        }
+        for (let i = 0; i < userEmail.length; i++) {
+            userEmail[i].textContent = obj[key]["email"];
+        }
+    });
+})();
+
+      
+
+
+    </script>
 </body>
 </html>

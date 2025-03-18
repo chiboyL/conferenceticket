@@ -68,7 +68,13 @@ document.addEventListener('DOMContentLoaded', () => {
          items[formdata.username]=formdata
          console.log(items)
          // STORED IN LOCAL STORAGE HERE OOOOOO
-         localStorage.setItem('userData',JSON.stringify(items));    
+         localStorage.setItem('userData',JSON.stringify(items));  
+         
+         
+
+
+       
+
     }
     function ClearScreen() {
         let submittedTextcontainer = document.createElement("div");
@@ -86,17 +92,10 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.appendChild(submittedTextcontainer);
     
         setTimeout(() => {
-            location.reload();
+            window.location.href = 'ticket.html';
         }, 3000);
     }
     
 
-    function setUsersEmailInSpan(){
-        const userName = document.getElementById("Usersname");
-        const userEmail = document.getElementById("textemail");
-
-        userName.textContent = formdata.username;
-        userEmail.textContent = formdata.email;
-    }
-
+   
 })
