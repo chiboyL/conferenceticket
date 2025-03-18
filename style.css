@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'myfont';
 }
 @font-face {
     font-family: 'myfont';
@@ -11,13 +12,37 @@
     /* overflow: hidden; */
 }
 
+.center{
+    text-align: center;
+}
+article h1{
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+p{
+    color: #e2dfe5a3;
+    font-weight: 700;
+}
+article{
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 1em;  
+}
+.icon{
+    background-color: #e1d0f118;
+    border-radius: 10px;
+    backdrop-filter: blur(3px);
+    padding: 0.5em;
+}
+
 body { 
     font-family: 'myfont', sans-serif;
     width: 90%;
     margin: 0 auto;
     background-image: url(assets/images/background-mobile.png);
     background-position: center;
-    background-size: 100vh;
+    background-size: cover;
     background-repeat: no-repeat;
     color: #fff;
     padding-top: 1em;
@@ -26,7 +51,7 @@ body {
 
 #dropContainer {
     width: 100%;
-    height: 10em;
+    height: 8em;
     border: 2px dashed #e1d0f17b;
     border-radius: 10px;
     display: flex;
@@ -35,6 +60,7 @@ body {
     justify-content: center;
     background-color: #e1d0f118;
     backdrop-filter: blur(3px);
+    margin-top: 1em;
 
     color: #333;
     font-size: 16px;
@@ -65,12 +91,71 @@ body {
     width: 100%;
 }
 .top-right{
-    top: 1em;
+    top: 0.8em;
     right: 0;
-    width: 10em;
-    /* background-color: red; */
+    width: 7em;
 }
 .bottom-left{
-    bottom: -5em;
+    bottom: -7em;
     left: 0;
+}
+.upload-p{
+    font-size: 12px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    margin-top: 1em;
+}
+.form-group-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 1em;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    gap:0.51em;
+    
+}
+input{
+    width: 100%;  
+    height: 3.5em;
+    padding: 1em;
+    outline: none;
+    border: 1px solid #e1d0f17b;
+    border-radius: 5px;
+    background-color: #e1d0f118;
+    color: #fff;
+}
+input::placeholder {
+    color: #e2dfe5a3;
+    font-family: 'myfont', sans-serif;
+    font-weight: 500;
+}
+button{
+    padding: 1em;
+    border-radius: 5px;
+    border: none;
+    background-color: #fa8a7b;
+    font-size: 1em;
+    font-weight: 600;
+    color: #260367;
+    cursor: pointer;
+    
+}
+button:hover{
+    background-color: transparent;
+    border: 1px solid #fa8a7b;
+    color: #fff;
+}
+.submitted{
+    background-color: red;
+}
+.text-gradient{
+    background: linear-gradient(to right, #fa8a7b, #fff);
+    background-clip: text;
+    color: transparent;
 }

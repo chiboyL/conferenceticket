@@ -10,23 +10,39 @@
 
        
    
-    <header>
+    <header class="center">
         <!-- <img src="assets/images/pattern-squiggly-line-top.svg" alt="" class="pattern"> -->
         <img src="assets/images/logo-full.svg" alt="">
-        <h1>Coding Conf</h1>
+        
     </header>
-    <section>
-        <h1>Your Journey to Coding Conf 2025 Starts Here!</h1>
+    <article class="center">
+        <h1 class="text-gradient">Your Journey to Coding Conf 2025 Starts Here!</h1>
         <p>Secure you sport at next year's biggest coding conference.</p>
-    </section>
-    <section class="fileuploadcontainer">
+    </article>
+    <form class="fileuploadcontainer" id="form">
         <p>Upload Avatar</p>
         <div class="uploadfile" id="dropContainer">
-            <img src="assets/images/icon-upload.svg" alt="">
-            <p>Drag and drop or click to upload</p>
+            <img src="assets/images/icon-upload.svg" alt="" class="icon" id="avatar" width="100%">
+            <p id="sometext">Drag and drop or click to upload</p>
             <input type="file" id="fileUpload" accept="image/*" style="display: none;">
         </div>
-    </section>
+        <p class="upload-p"  id="sometext"><span><img src="assets/images/icon-info.svg" alt="" w=></span>Upload your photo (JPG or PNG, max size: 500KB)</p>
+        <section class="form-group-container">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required placeholder="Ekezie Chinonso">
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="example@email.com" required>
+            </div>
+            <div class="form-group">
+                <label for="github">GitHub Username</label>
+                <input type="text" id="githubusername" name="github" placeholder="@yourusername" required>
+            </div>
+            <button type="submit">Generate My Ticket</button>
+        </section>
+    </form>
 
   
     
