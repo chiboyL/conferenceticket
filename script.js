@@ -60,12 +60,13 @@ function GetUserData(){
     formdata.githubusername = document.getElementById("githubusername").value;
 
 
-
      // CONERTING TO JSON HERE OOOOOOOOOO:)
-     let formdataJSON = JSON.stringify(formdata);
-
+     let items=JSON.parse(localStorage.getItem('userData'))?? {}
+    
+     items[formdata.username]=formdata
+     console.log(items)
      // STORED IN LOCAL STORAGE HERE OOOOOO
-     localStorage.setItem('userData', formdataJSON);    
+     localStorage.setItem('userData',JSON.stringify(items));    
 }
 function ClearScreen() {
     let submittedTextcontainer = document.createElement("div");
