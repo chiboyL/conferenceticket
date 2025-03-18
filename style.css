@@ -187,3 +187,13 @@ main{
     gap: 1em;
     margin-top: 1em;
 }
+@media screen and (max-width: 600px) {
+    .container {
+        position: absolute;
+        top: 1em;
+        left: 2em;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+}
